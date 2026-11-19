@@ -1,0 +1,17 @@
+{
+  "snapshot_sha256": "b0d221e65d3dc878747926766063f53996c6e974008357be933979d94538d2eb",
+  "fingerprint_version": "sorted_partner_minima_v1",
+  "group_key": "FP_MINIMA_EXACT",
+  "eligibility": "computed; not_annotated; one distinct non-null PKD among eligible observations",
+  "representative_order": [
+    "FP_MINIMA_EXACT",
+    "GEOMETRY_ID",
+    "OBSERVATION_ID"
+  ],
+  "input_observations": 12062,
+  "selected_observations": 4345,
+  "pending_fingerprints": 118,
+  "pending_observations": 2771,
+  "observations_without_fingerprint": 135,
+  "selected_file_sha256": "d533e0b6f139e1e6d1e2e9a8033e72b3b799acfaf850affaa56b6833f59691dd"
+}

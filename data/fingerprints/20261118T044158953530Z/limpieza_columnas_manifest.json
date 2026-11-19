@@ -1,0 +1,31 @@
+{
+  "snapshot_sha256": "b0d221e65d3dc878747926766063f53996c6e974008357be933979d94538d2eb",
+  "selection_sha256": "dda29f16b55123c1cf9ded6038be1369db83d584bc8015ba1334e139f98bf222",
+  "dropped_columns": [
+    "AFFINITY_PMID",
+    "AFFINITY_REFERENCE_RAW",
+    "GEOMETRY_ISSUE",
+    "MUTATIONS_RAW",
+    "RESOLUTION_ANGSTROM",
+    "RESOLUTION_ANGSTROM_RAW",
+    "TEMPERATURE_RAW",
+    "USES_REFERENCE_FOR_MUTATION"
+  ],
+  "all_null_columns": [
+    "MUTATIONS_RAW",
+    "GEOMETRY_ISSUE",
+    "USES_REFERENCE_FOR_MUTATION"
+  ],
+  "discarded_metadata": [
+    "TEMPERATURE_RAW",
+    "AFFINITY_PMID",
+    "RESOLUTION_ANGSTROM",
+    "RESOLUTION_ANGSTROM_RAW",
+    "AFFINITY_REFERENCE_RAW"
+  ],
+  "preserved_subgroup": "SUBGROUP_RAW; biological annotation, excluded from predictors",
+  "rule": "all-null columns plus five metadata fields explicitly excluded",
+  "rows": 4447,
+  "columns": 250,
+  "sha256": "b17dd94aba6d8c6a1ad2062e78b7bae2775132f7f6b833d5c0e22a3e6ffef9ad"
+}

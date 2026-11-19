@@ -1,0 +1,9 @@
+{
+  "created_at_utc": "2026-11-18T19:47:13.211891+00:00",
+  "snapshot_sha256": "b0d221e65d3dc878747926766063f53996c6e974008357be933979d94538d2eb",
+  "source": "Silver cache / GEOMETRY_ID / residues.jsonl.gz",
+  "selection": "all usable CA residues; no SELECTED_Q1 filter",
+  "geometry_count": 4716,
+  "residue_count": 2298656,
+  "sha256": "dcb8e62ef4bfd078214ccea06007ad3fdc7587925034ad909bdaaa2963797988"
+}

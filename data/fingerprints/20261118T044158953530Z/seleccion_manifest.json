@@ -1,0 +1,19 @@
+{
+  "decision_date": "2026-11-18",
+  "snapshot_sha256": "b0d221e65d3dc878747926766063f53996c6e974008357be933979d94538d2eb",
+  "fingerprint_version": "sorted_partner_minima_v1",
+  "group_key": "FP_MINIMA_EXACT",
+  "eligibility": "computed; not_annotated; PKD present",
+  "base_selection": "seleccion_sin_conflicto/observaciones_filtradas.parquet",
+  "conflict_selection": "uniform row sample per group after sorting by fingerprint and observation id",
+  "random_seed": 42,
+  "pandas_version": "2.2.2",
+  "input_observations": 12062,
+  "base_observations": 4345,
+  "added_observations": 102,
+  "selected_observations": 4447,
+  "pending_fingerprints": 16,
+  "pending_observations": 26,
+  "observations_without_fingerprint": 135,
+  "selected_file_sha256": "dda29f16b55123c1cf9ded6038be1369db83d584bc8015ba1334e139f98bf222"
+}

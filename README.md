@@ -47,7 +47,24 @@ Configura la ruta del snapshot en el notebook; no seleccionar automáticamente e
 
 Reejecutar 03/04 crea nuevas corridas y actualiza reportes. El protocolo de 05 fija URIs de modelos y rechaza cambios: para reproducir la evaluación final existente, usar los artefactos y reportes congelados; no sustituir sus modelos tras ver test. La recarga del champion se comprueba en un proceso Python limpio. En una reproducción desde cero, eliminar resultados únicamente en una copia separada y ejecutar el flujo completo con datos idénticos.
 
-Los notebooks esperan el snapshot y artefactos locales verificados de `data/` (excluidos de Git): mínimos completos y grupos estructurales además de la OBT. Consultar `docs/origen_datos.md`, `docs/fingerprints.md` y `docs/structural_groups.md` para reconstruirlos. No basta con clonar el código sin preparar esos datos; MLflow Registry también requiere sus volúmenes o repetir entrenamiento.
+Los datos preparados de esta entrega están incluidos en `data/snapshots`,
+`data/fingerprints`, `data/structural_groups` y `data/modelado`: OBT, mínimos,
+fingerprints, embeddings, grupos, tabla de modelado y split congelado. No hace
+falta conectarse a Snowflake para trabajar con esta copia. Antes de abrir los
+notebooks, configura el snapshot incluido:
+
+```sh
+cp configs/dataset.example.json configs/dataset.local.json
+```
+
+Las estructuras originales, credenciales, modelos binarios y volúmenes de MLflow
+no están incluidos. `docs/corridas.csv` contiene 112 corridas exportadas para
+revisar resultados sin disponer del servidor original. Sus identificadores y
+URIs documentan la ejecución original, no descargan los modelos desde GitHub.
+Los notebooks 03 y 04 permiten repetir el entrenamiento con los datos preparados;
+el protocolo congelado de 05 aún referencia las corridas originales y debe
+configurarse explícitamente para evaluar una nueva ejecución en una copia separada.
+No se afirma una reproducción completa con un solo comando.
 
 ## Resultados finales
 - Dataset: 4 447 observaciones; 173 predictores + PKD + grupo. Train: 3 670; test: 777.

@@ -1,0 +1,55 @@
+{
+  "algorithm": "idist_onehot_ca10_silver_v1",
+  "source_sha256": "b17dd94aba6d8c6a1ad2062e78b7bae2775132f7f6b833d5c0e22a3e6ffef9ad",
+  "upstream_commit": "f95974290bf3c48ccb1a683aee59cbf89791b2cc",
+  "interface": "cross-partner CA min distance <10 angstrom; all such residues, not Q1",
+  "threshold": 0.04,
+  "threshold_decision": {
+    "threshold": 0.04,
+    "comparison": "strict_less_than",
+    "decision_date": "2026-11-18",
+    "decision_source": "user_selected",
+    "sensitivity_thresholds": [
+      0.03,
+      0.04,
+      0.05
+    ]
+  },
+  "status": "threshold_selected_pending_structural_review",
+  "uses_affinity": false,
+  "pooling": "mean of physical-chain means",
+  "node_features": "20 standard amino-acid one-hot",
+  "geometry_count": 4447,
+  "computed": 4154,
+  "requires_review": 293,
+  "workers": 8,
+  "diagnostics": [
+    {
+      "threshold": 0.03,
+      "groups": 2524,
+      "largest_group": 33,
+      "singletons": 1736,
+      "edges": 4127
+    },
+    {
+      "threshold": 0.04,
+      "groups": 2106,
+      "largest_group": 245,
+      "singletons": 1330,
+      "edges": 5761
+    },
+    {
+      "threshold": 0.05,
+      "groups": 1122,
+      "largest_group": 2262,
+      "singletons": 735,
+      "edges": 14504
+    }
+  ],
+  "files_sha256": {
+    "similarity_edges.parquet": "2e3346f5d83537722ecff99e3c08bb4af1e826b8945a36dd2c7fda6976fcfd27",
+    "embeddings.parquet": "43ab84ee4daad0b115a6d265b3c9d1657b2f787d73b4adbbac69675958f9257f",
+    "threshold_diagnostics.csv": "4fcef6044e8425e1c2f450b3aa6c79653ebe397041ce4dba501edce377572808",
+    "structural_groups.parquet": "843480131d070e0eee1efe18c0e98a3d9df5388d9950ef3057025f00ec23b376"
+  }
+}

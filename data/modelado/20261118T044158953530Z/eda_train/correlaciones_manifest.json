@@ -1,0 +1,13 @@
+{
+  "universe": "training_only_before_imputation",
+  "rows": 3670,
+  "method": "spearman",
+  "missing_policy": "pairwise_complete_finite",
+  "min_periods": 3,
+  "review_absolute_threshold": 0.9,
+  "pairs_total": 14878,
+  "pairs_flagged": 81,
+  "split_assignment_sha256": "7aa6422d30831d73714daee4c16786725640a5f95ae2bd69eb0ba272ceb748d2",
+  "source_sha256": "c6dfec52e963d6f3b51aa7a73ff1be1e145b4f72d65a4121f31db5c2eeedccf9",
+  "features_removed": []
+}

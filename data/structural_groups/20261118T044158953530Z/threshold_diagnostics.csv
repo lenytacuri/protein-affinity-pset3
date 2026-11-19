@@ -1,0 +1,4 @@
+threshold,groups,largest_group,singletons,edges
+0.03,2524,33,1736,4127
+0.04,2106,245,1330,5761
+0.05,1122,2262,735,14504
