@@ -1,0 +1,11 @@
+{
+  "threshold": 0.04,
+  "comparison": "strict_less_than",
+  "decision_date": "2026-11-18",
+  "decision_source": "user_selected",
+  "sensitivity_thresholds": [
+    0.03,
+    0.04,
+    0.05
+  ]
+}

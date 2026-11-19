@@ -1,0 +1,7 @@
+FROM python:3.11.14-slim-bookworm
+COPY docker/mlflow-requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt && pip check
+RUN pip install --no-cache-dir sqlalchemy==2.0.44 && pip check
+RUN useradd -m -u 1000 mlflow && mkdir /artifacts && chown mlflow:mlflow /artifacts
+USER mlflow
+CMD ["python", "-m", "mlflow", "server"]

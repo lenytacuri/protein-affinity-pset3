@@ -1,0 +1,27 @@
+{
+  "primary_metric": "RMSE",
+  "secondary_metrics": [
+    "MAE",
+    "R2"
+  ],
+  "champion": "SVR",
+  "challenger": "XGBRegressor",
+  "target_threshold": 7.0,
+  "selection_fraction": 0.2,
+  "rounding": "floor",
+  "selection_rule": "top predictions, no predicted cutoff",
+  "random_seed": 42,
+  "random_repetitions": 10000,
+  "itc_usd_per_measurement": 402.86,
+  "itc_instrument_hours_per_measurement": 7.0,
+  "illustrative_ml_lot_cost_usd": 100.0,
+  "cost_source": "https://bpc.uic.edu/instruments-services/services/",
+  "threshold_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7531523/",
+  "source_sha256": "c6dfec52e963d6f3b51aa7a73ff1be1e145b4f72d65a4121f31db5c2eeedccf9",
+  "split_assignment_sha256": "7aa6422d30831d73714daee4c16786725640a5f95ae2bd69eb0ba272ceb748d2",
+  "model_uris": {
+    "SVR": "runs:/72fe83523ad74823a97ba08087442c50/pipeline",
+    "XGBRegressor": "runs:/ad23c738cbcb43a488fb85ed7db2dc4b/pipeline"
+  },
+  "registry_name": "protein-affinity-modelo"
+}

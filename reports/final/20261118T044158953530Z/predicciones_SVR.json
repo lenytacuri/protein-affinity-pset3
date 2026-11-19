@@ -1,0 +1,6 @@
+{
+  "policy_sha256": "a99cbf3fe3c53d785c2175cf2ea138c7f51f96765f0e64cb7a070522583882f5",
+  "model_uri": "runs:/72fe83523ad74823a97ba08087442c50/pipeline",
+  "inference_seconds": 1.0063891249956214,
+  "prediction_sha256": "25af74ceb801ab6fb0c7a44e338b81c928bf43489404de6283a4641f21bec0bc"
+}

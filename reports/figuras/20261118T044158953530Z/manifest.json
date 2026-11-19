@@ -1,0 +1,26 @@
+{
+  "snapshot": "20261118T044158953530Z",
+  "source_sha256": "c6dfec52e963d6f3b51aa7a73ff1be1e145b4f72d65a4121f31db5c2eeedccf9",
+  "policy_sha256": "a99cbf3fe3c53d785c2175cf2ea138c7f51f96765f0e64cb7a070522583882f5",
+  "source_notebooks": "01\u201305, artefactos guardados",
+  "training_figures": [
+    "01_target_train",
+    "02_asimetria_boxplots_train",
+    "03_correlaciones_train",
+    "04_baseline_train_cv",
+    "05_tuning_cv"
+  ],
+  "frozen_test_figures": [
+    "06_predicciones_test",
+    "07_negocio_test"
+  ],
+  "files_sha256": {
+    "03_correlaciones_train.png": "6f094a8fd9c8d09bda8aa87b7d86389a08b66a12961767aaeb6b4095acd16237",
+    "01_target_train.png": "ee04c5344fcc0b9bb6971e4d1f0d8bdeeaac75efee90f6833674dd0758ad7316",
+    "04_baseline_train_cv.png": "133321e8a8b6cd0a1337c4ed91fc699c1b6acab5f22d81424ffe0ca0a9259261",
+    "07_negocio_test.png": "4f0543aa71f2dfe2ecd183a6745097d340ca063697a8a035a04d4d71549f06cb",
+    "05_tuning_cv.png": "8d2a871594ee6cc4b734954ccc85d9a6f94029202668224f29f0c954d945d1b7",
+    "06_predicciones_test.png": "4e9a287eebb55130f35cc7beddb11e7d88c777ef8f9b10a782428c2444da2d5f",
+    "02_asimetria_boxplots_train.png": "c3ab8f08d2cb9373c7c7ddb2a97ebd6528055eff285c3faa8af012a249a78f36"
+  }
+}

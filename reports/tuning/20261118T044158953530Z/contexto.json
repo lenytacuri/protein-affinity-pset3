@@ -1,0 +1,77 @@
+{
+  "snapshot": "20261118T044158953530Z",
+  "protocol": "gridsearch_v1",
+  "git_commit": "unavailable",
+  "versions": {
+    "sklearn": "1.5.2",
+    "xgboost": "2.1.4",
+    "numpy": "1.26.4"
+  },
+  "experiments_code_sha256": "f2bb5210db1be269017a4f42a51deda5a8dd36a6990abab9eb2b1d2e88cd94f8",
+  "source_sha256": "c6dfec52e963d6f3b51aa7a73ff1be1e145b4f72d65a4121f31db5c2eeedccf9",
+  "split_assignment_sha256": "7aa6422d30831d73714daee4c16786725640a5f95ae2bd69eb0ba272ceb748d2",
+  "folds_sha256": "65c064d96adbab49ef5ee7c01c1d7567f5317bfc8a1d8d4c8b66c65b08858cc6",
+  "pipeline_code_sha256": "c7b6cd7c4f8d1ccf9bb08bff700f5f5a346e6ca3b0e62464deb6b6f8ffd8aa55",
+  "test_used": false,
+  "mandatory_train_rows": 293,
+  "primary_metric_provisional": "RMSE",
+  "transformations": "none",
+  "baseline_file_sha256": "5a1d959c559cd6be95127f51143f6fdd73d0a7e43874dec521ab6a291e629d53",
+  "grid": {
+    "RandomForestRegressor": {
+      "modelo__max_depth": [
+        5,
+        10,
+        null
+      ],
+      "modelo__min_samples_leaf": [
+        1,
+        3,
+        5,
+        10,
+        20
+      ],
+      "modelo__max_features": [
+        0.5,
+        1.0
+      ]
+    },
+    "XGBRegressor": {
+      "modelo__max_depth": [
+        2,
+        4,
+        6
+      ],
+      "modelo__learning_rate": [
+        0.01,
+        0.03,
+        0.1,
+        0.2,
+        0.3
+      ],
+      "modelo__n_estimators": [
+        100,
+        300
+      ]
+    },
+    "SVR": {
+      "modelo__C": [
+        0.1,
+        1,
+        10,
+        100,
+        1000
+      ],
+      "modelo__gamma": [
+        "scale",
+        0.001,
+        0.01
+      ],
+      "modelo__epsilon": [
+        0.1,
+        0.3
+      ]
+    }
+  },
+  "n_jobs": 8
+}

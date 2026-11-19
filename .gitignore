@@ -1,0 +1,21 @@
+.env
+.env.*
+!.env.example
+.secrets/
+data/
+mlruns/
+mlartifacts/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+.DS_Store
+configs/*.local.json
+
+# Datos binarios, modelos y secretos fuera del repositorio
+*.parquet
+*.pkl
+*.joblib
+*.p8
+*.pem
+*.key

@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "cv_folds": 5,
+  "transformacion_baseline": "ninguna",
+  "columnas_transformar": [],
+  "modelos": [
+    "Ridge",
+    "RandomForestRegressor",
+    "XGBRegressor",
+    "MLPRegressor",
+    "SVR"
+  ],
+  "nota": "Comparar transformaciones despu\u00e9s; no escoger columnas usando test. Paralelizar modelos o folds, no ambos."
+}

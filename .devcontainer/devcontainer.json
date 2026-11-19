@@ -1,0 +1,21 @@
+{
+  "name": "Protein affinity — PSet 3",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "training",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "none",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "jupyter.notebookFileRoot": "${workspaceFolder}"
+      }
+    }
+  },
+  "postCreateCommand": "python -m ipykernel install --user --name protein-affinity-pset3 --display-name \"Python — Protein Affinity (PSet 3)\""
+}

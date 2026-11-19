@@ -1,0 +1,88 @@
+{
+  "scope": "Historical source ingested again and full pipeline replay in the existing project account; not an empty-account test.",
+  "kestra_execution_id": "1PoNtg6X5ukSm0ftJi4VpX",
+  "kestra_status": "SUCCESS",
+  "pipeline_mode": "replay",
+  "batch_id": "2026-11-13T212905.751312_0000_44c85b0f",
+  "reference_url": "https://zenodo.org/records/14271435",
+  "source_sha256": "d015d8170959f546ae3bf7adf33c711a308ad8691cef0b151f95bdf3982f148e",
+  "source_records": 12062,
+  "unique_pdb_ids": 3032,
+  "extraction_coverage": "PARTIAL",
+  "unavailable_resources": 6,
+  "raw_before": {
+    "SOURCE_RECORDS": 12062,
+    "RCSB_ENTRIES": 3026,
+    "RESOURCE_FILES": 6058,
+    "BATCH_RESOURCES": 12128,
+    "INGESTION_BATCHES": 2
+  },
+  "raw_after": {
+    "SOURCE_RECORDS": 12062,
+    "RCSB_ENTRIES": 3026,
+    "RESOURCE_FILES": 6058,
+    "BATCH_RESOURCES": 12128,
+    "INGESTION_BATCHES": 2
+  },
+  "raw_replay_unchanged": true,
+  "observation_counts": {
+    "bronze": 12062,
+    "silver": 12062,
+    "gold": 12062,
+    "obt": 12062
+  },
+  "dbt_tests": {
+    "bronze": {
+      "passed": 28,
+      "total": 28,
+      "replay_identical": true
+    },
+    "silver": {
+      "passed": 47,
+      "total": 47,
+      "replay_identical": true
+    },
+    "backbone": {
+      "passed": 19,
+      "total": 19,
+      "replay_identical": true
+    },
+    "gold": {
+      "passed": 29,
+      "total": 29,
+      "replay_identical": true
+    }
+  },
+  "dbt_tests_passed": 123,
+  "obt": {
+    "table": "PROTEIN_AFFINITY.ANALYTICS.OBT_AFFINITY",
+    "rows": 12062,
+    "columns": 280,
+    "spark_version": "4.0.1",
+    "master": "local[8]",
+    "spark_replay_identical": true,
+    "parquet_roundtrip_identical": true,
+    "parents_unchanged": true,
+    "loaded": {
+      "rows": 12062,
+      "unique_ids": 12062,
+      "hash": 4138267215546828772,
+      "all_columns_equal_to_gold_join": true
+    }
+  },
+  "stage_statuses": {
+    "prepare": "SUCCESS",
+    "extract": "SUCCESS",
+    "raw": "SUCCESS",
+    "profile": "SUCCESS",
+    "bronze": "SUCCESS",
+    "silver": "SUCCESS",
+    "backbone": "SUCCESS",
+    "gold": "SUCCESS",
+    "obt": "SUCCESS",
+    "dictionary": "SUCCESS",
+    "finish": "SUCCESS"
+  },
+  "original_summary_sha256": "b5bc4f86e59fceda92e8157ddd6aa185cdc0986798b7995182e8b063d7fba9bd",
+  "kestra_receipt_sha256": "55777fe205e94dc56f430ea1dd9a812f5ede4f765b915c9d8d637437c84259e7"
+}

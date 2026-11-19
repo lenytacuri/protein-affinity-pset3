@@ -1,0 +1,53 @@
+name: protein-affinity-pset3
+services:
+  postgres:
+    image: postgres:17.6-bookworm
+    environment:
+      POSTGRES_DB: mlflow
+      POSTGRES_USER: mlflow
+      POSTGRES_PASSWORD: ${MLFLOW_DB_PASSWORD:?Crea .env primero}
+    volumes:
+      - mlflow_db:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U mlflow -d mlflow']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  mlflow:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.mlflow
+    environment:
+      MLFLOW_BACKEND_STORE_URI: postgresql+psycopg2://mlflow:${MLFLOW_DB_PASSWORD}@postgres:5432/mlflow
+    command: [mlflow, server, --host, 0.0.0.0, --port, '5000', --serve-artifacts, --artifacts-destination, /artifacts]
+    ports:
+      - '127.0.0.1:${MLFLOW_PORT:-5051}:5000'
+    volumes:
+      - mlflow_artifacts:/artifacts
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:5000/health')"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+  training:
+    build: .
+    init: true
+    command: [sleep, infinity]
+    env_file: .env
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      MLFLOW_EXPERIMENT_NAME: protein-affinity
+      PYTHONPATH: /workspace
+    volumes:
+      - .:/workspace
+      - ./.secrets:/run/secrets:ro
+    depends_on:
+      mlflow:
+        condition: service_healthy
+volumes:
+  mlflow_db:
+  mlflow_artifacts:

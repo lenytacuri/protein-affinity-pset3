@@ -1,0 +1,21 @@
+{
+  "target_propuesto": "PKD",
+  "seed": 42,
+  "estado": "evaluacion_final_completada",
+  "split": {
+    "method": "GroupShuffleSplit",
+    "test_size_groups": 0.2,
+    "seed": 42,
+    "mandatory_train_label": "SIN_REPRESENTACION_SOLO_TRAIN"
+  },
+  "features": "173 predictores originales; dos derivadas evaluadas sin mejora suficiente",
+  "metrica_tecnica": "RMSE principal; MAE y R2 complementarias",
+  "metrica_negocio": "Aciertos pKd>=7 en top20%; recuperación y costo por acierto; ahorro hipotético de ensayos pospuestos",
+  "familias_propuestas": [
+    "Ridge",
+    "RandomForestRegressor",
+    "XGBRegressor",
+    "MLPRegressor",
+    "SVR"
+  ]
+}

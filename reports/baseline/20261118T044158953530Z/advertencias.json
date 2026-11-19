@@ -1,0 +1,26 @@
+[
+  {
+    "modelo": "MLPRegressor",
+    "fold": 1,
+    "categoria": "ConvergenceWarning",
+    "mensaje": "Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet."
+  },
+  {
+    "modelo": "MLPRegressor",
+    "fold": 2,
+    "categoria": "ConvergenceWarning",
+    "mensaje": "Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet."
+  },
+  {
+    "modelo": "MLPRegressor",
+    "fold": 3,
+    "categoria": "ConvergenceWarning",
+    "mensaje": "Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet."
+  },
+  {
+    "modelo": "MLPRegressor",
+    "fold": 4,
+    "categoria": "ConvergenceWarning",
+    "mensaje": "Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet."
+  }
+]

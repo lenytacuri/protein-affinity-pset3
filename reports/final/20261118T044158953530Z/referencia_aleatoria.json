@@ -1,0 +1,13 @@
+{
+  "N": 777,
+  "K": 155,
+  "positivos_disponibles": 473,
+  "aciertos_esperados": 94.35649935649936,
+  "aciertos_promedio_simulado": 94.2645,
+  "percentil_2_5": 83.0,
+  "percentil_97_5": 105.0,
+  "costo_medir_todos_usd": 313022.22000000003,
+  "costo_medir_cupo_usd": 62443.3,
+  "ahorro_bruto_escenario_usd": 250578.92,
+  "horas_instrumento_liberadas": 4354.0
+}

@@ -1,0 +1,7 @@
+.git
+.env
+.env.*
+.secrets
+data
+notebooks
+__pycache__

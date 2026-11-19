@@ -1,0 +1,19 @@
+{
+  "snapshot": "20261118T044158953530Z",
+  "protocol": "defaults_v2",
+  "git_commit": "unavailable",
+  "versions": {
+    "sklearn": "1.5.2",
+    "xgboost": "2.1.4",
+    "numpy": "1.26.4"
+  },
+  "experiments_code_sha256": "8abfe3df7a6410466ff874f8b05610bb783179dd6b4e4810f8aedf68fe6a6380",
+  "source_sha256": "c6dfec52e963d6f3b51aa7a73ff1be1e145b4f72d65a4121f31db5c2eeedccf9",
+  "split_assignment_sha256": "7aa6422d30831d73714daee4c16786725640a5f95ae2bd69eb0ba272ceb748d2",
+  "folds_sha256": "65c064d96adbab49ef5ee7c01c1d7567f5317bfc8a1d8d4c8b66c65b08858cc6",
+  "pipeline_code_sha256": "c7b6cd7c4f8d1ccf9bb08bff700f5f5a346e6ca3b0e62464deb6b6f8ffd8aa55",
+  "test_used": false,
+  "mandatory_train_rows": 293,
+  "primary_metric_provisional": "RMSE",
+  "transformations": "none"
+}

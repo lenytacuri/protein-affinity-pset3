@@ -1,0 +1,15 @@
+{
+  "snapshot_shape": [
+    12062,
+    280
+  ],
+  "snapshot_sha256": "b0d221e65d3dc878747926766063f53996c6e974008357be933979d94538d2eb",
+  "source": "Parquet validado PSet 2, ejecuci\u00f3n 20261113T214845538920Z; no consulta actual a Snowflake",
+  "unit_tests_passed": 5,
+  "notebooks_valid": 5,
+  "mlflow_artifact_roundtrip": true,
+  "smoke_run_id": "04d2691f208544e182f3f7da7e5956d5",
+  "model_training_executed": false,
+  "split_created": false,
+  "mlflow_record_persisted_after_restart": true
+}
